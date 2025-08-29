@@ -1,0 +1,16 @@
+{
+    "name": "@ai-risk/workers",
+    "version": "0.1.0",
+    "description": "AI Risk Scenario Generator Workers",
+    "main": "src/main.py",
+    "scripts": {
+        "dev": "python -m uvicorn src.main:app --reload --host 0.0.0.0 --port 8000",
+        "start": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
+        "test": "python -m pytest tests/ -v",
+        "lint": "python -m flake8 src/ tests/",
+        "format": "python -m black src/ tests/",
+        "type-check": "python -m mypy src/"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}
